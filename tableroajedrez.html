@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Ajedrez</title>
+</head>
+<body align="center">
+    <canvas id="myCanvas" width="1200" height="1200" style="border:1px solid grey"></canvas>
+
+    <script>
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(150, 0, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(300, 0, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(450, 0, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(600, 0, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(750, 0, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(900, 0, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(1050, 0, 150, 150);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 150, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(150, 150, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(300, 150, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(450, 150, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(600, 150, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(750, 150, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(900, 150, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(1050, 150, 150, 150);
+
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 300, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(150, 300, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(300, 300, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(450, 300, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(600, 300, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(750, 300, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(900, 300, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(1050, 300, 150, 150);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 450, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(150, 450, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(300, 450, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(450, 450, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(600, 450, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(750, 450, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(900, 450, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(1050, 450, 150, 150);
+
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 600, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(150, 600, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(300, 600, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(450, 600, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(600, 600, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(750, 600, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(900, 600, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(1050, 600, 150, 150);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 750, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(150, 750, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(300, 750, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(450, 750, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(600, 750, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(750, 750, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(900, 750, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(1050, 750, 150, 150);
+
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 900, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(150, 900, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(300, 900, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(450, 900, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(600, 900, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(750, 900, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(900, 900, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(1050, 900, 150, 150);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 1050, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(150, 1050, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(300, 1050, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(450, 1050, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(600, 1050, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(750, 1050, 150, 150);
+    ctx.fillStyle = "white";
+    ctx.fillRect(900, 1050, 150, 150);
+    ctx.fillStyle = "black";
+    ctx.fillRect(1050, 1050, 150, 150);
+    </script>
+    <br>
+    <svg height="130" width="200">
+        <defs>
+          <linearGradient id="grad1">
+            <stop offset="0%" stop-color="blue" />
+            <stop offset="100%" stop-color="purple" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">MGJ</text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+</body>
+</html>
