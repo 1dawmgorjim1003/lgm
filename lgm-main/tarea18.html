@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 18</title>
+    <style>
+        .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        }
+
+        .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 10px;
+        font-size: 10px;
+        }
+        .enfoca:link {color:#137D87; font-weight:normal;  font-size:18px; text-decoration:none;
+						font-family:verdana, arial, helvetica, sans-serif}
+
+		.enfoca:visited  {color:#137D87; font-weight:normal; font-size:18px; text-decoration:none;
+						font-family:verdana,arial,helvetica,sans-serif;}
+
+		.enfoca:hover  {background:   #137D87;   color:#FFFFFF;cursor:     hand;  font-weight:   normal;  font-size:24px;
+						text-decoration:   none;  border:   lpx  solid #003366;  font-family:   verdana,   arial, helvetica,   sans-serif}
+
+		.enfoca:active  {color:#137D87;  font-weight:   normal;  font-size: 18px; text-decoration:none;
+						font-family:   verdana,  arial,  helvetica,   sans-serif;}
+    </style>
+</head>
+<body>
+    <h1><a class="enfoca" href="tarea18.html">EJEMPLOS DEL MODULO FLEX</a></h1>
+    <div class="flex-container">
+        <div><table class="tabla3" border="2" style="border-style: solid;">
+            <tr align="center" class="celdas">
+                <td colspan="6">HORARIO DE CLASE CURSO 2024-2025</td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td><b>HORAS</b></td>
+                <td><b>Lunes</b></td>
+                <td><b>Martes</b></td>
+                <td><b>Miércoles</b></td>
+                <td><b>Jueves</b></td>
+                <td><b>Viernes</b></td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td>8:30   9:30</td>
+                <td rowspan="3" class="programacion">PROGRAMACIÓN</td>
+                <td rowspan="2" class="programacion">PROGRAMACIÓN</td>
+                <td rowspan="2" class="ipe">IPE</td>
+                <td class="ipe">IPE</td>
+                <td rowspan="3" class="programacion">PROGRAMACIÓN</td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td>9:30   10:30</td>
+                <td rowspan="2" class="lgm">LENGUAJE DE MARCAS</td>        
+            </tr>
+            <tr align="center" class="celdas">
+                <td>10:30 11:30</td>
+                <td class="lgm">LENGUAJE DE MARCAS</td>
+                <td class="sos">SOSTENIBILIDAD</td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td colspan="6"><b>RECREO</b></td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td>12:00 13:00</td>
+                <td rowspan="3" class="bsd">BASES DE DATOS</td>
+                <td rowspan="3" class="bsd">BASES DE DATOS</td>
+                <td rowspan="2" class="si">SISTEMAS INFORMÁTICOS</td>
+                <td rowspan="3" class="si">SISTEMAS INFORMÁTICOS</td>
+                <td rowspan="3" class="edd">ENTORNOS DE DESARROLLO</td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td>13:00 14:00</td>
+            </tr>
+            <tr align="center" class="celdas">
+                <td>14:00 15:00</td>
+                <td class="dg">DIGITALIZACIÓN</td>
+            </tr>
+        </table></div>
+        <div><img src="imagenes/patioleones.jpg" width="150" height="150"></div>
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/yHehpAAvK5E?si=HnY2cqP8lmSRJqAp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>  
+    </div>
+    <br>
+    <div class="flex-container">
+        <div><iframe src="3enlaces.html" title="Enlaces"></iframe></div>
+        <div><a href="https://iesmartinezm.es/">Web del centro</a></div>
+        <div><iframe src="https://es.wikipedia.org/wiki/Wikipedia:Portada" title="Wikipedia"></iframe></div>  
+      </div>
+</body>
+</html>

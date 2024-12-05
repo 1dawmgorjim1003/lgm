@@ -1,0 +1,50 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(../IMGS/FondIndex.jpg);
+    background-size: 100%;
+}
+
+.titulo {
+    background-color: gainsboro;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 20px;
+}
+.menu {
+    float: left;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 150px;
+    padding: 10px;
+    width: 15%;
+    background-color: gainsboro;
+    font-size: 20px;
+}
+    .menu_tabla {
+        text-align: center;
+        border-style: solid;
+        border-color: black;
+        border-radius: 15%;
+        padding: 10px;
+        background-color: white;
+        font-family:'Times New Roman', Times, serif
+        
+    }
+.cuerpo {
+    float: left;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 10px;
+    padding: 15px;
+    width: 65%;
+    background-color: gainsboro;
+    font-size: 20px;
+    
+}
+    .cuerpo p {
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }

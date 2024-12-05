@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÍNDICE</title>
+    <style>
+        .titulo {
+            background-color: red;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+            width: 50%;
+            margin: 0 auto;
+
+        }
+        .subtitulo {
+            background: linear-gradient(0deg, 
+                hsl(0, 100%, 50%),   /* Rojo puro */
+                hsl(120, 100%, 50%), /* Verde puro */
+                hsl(240, 100%, 50%)  /* Azul puro */
+            );
+            text-align: center;
+            transition: background 0.5s ease;
+            width: 25%;
+            margin: 0 auto;
+        }
+        .subtitulo:hover {
+            background: rgb(161, 49, 206);
+        }
+        .foto {
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            
+        }
+        .foto:hover {
+            width: 500px;
+            height: 500px;
+        }
+        .flex {
+        margin-top: 200px;
+            display: flex;
+        background-color: rgb(255, 255, 255);
+        }
+
+        .flex > div {
+        background-color: #33c463;
+        margin: 20px;
+        margin-left: 450px;
+        padding: 10px;
+        font-size: 15px;
+        }
+        
+        .horizontal {
+		list-style-type: none;
+		margin-left: 0;
+		padding: 0px;
+		overflow: hidden;
+		background-color: dodgerblue; 
+	    }
+
+		.horizontal li {
+		float: left;
+		}
+
+		.horizontal li a {
+		display: block;
+		color: black;
+		font-size: 15px;
+		text-align: center;
+		padding: 14px 9px;
+		text-decoration: none;
+		font-family: "Comic Sans MS";
+		}
+        .tabla {
+            background-color: blueviolet;
+            transition: all 3s ease;
+        }
+        .tabla:hover {
+            background-color: aqua;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo"><h1>TRABAJO FINAL</h1></div>
+    <br>
+    <div class="subtitulo"><h2>HTML Y CSS</h2></div>
+    <br>
+    <div align="center"><img class="foto" src="lgm-main/imagenes/IMG-20240813-WA0026.jpg"></div>
+    
+    <br>
+    <div class="flex">
+        <div  class="horizontal">
+            <ol></ol>
+                <li><a href="ProyectoLGM/index.html">GORGINE</a></li>
+                <li><a href="lgm-main/index.html">Ejercicios de clase</a></li>
+            </ol>
+        </div>
+        <div class="div_derecha">
+            <table class="tabla" border="1">
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Miguel</td>
+                </tr>
+                <tr>
+                    <td>Módulo:</td>
+                    <td>Lenguaje de marcas y sistemas de gestión</td>
+                </tr>
+                <tr>
+                    <td>IES:</td>
+                    <td>Martínez Montañés</td>
+                </tr>
+                <tr>
+                    <td>Profesor:</td>
+                    <td>Gregorio Jiménez Martínez</td>
+                </tr>
+                <tr>
+                    <td>Curso:</td>
+                    <td>24/25</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
